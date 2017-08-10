@@ -1,6 +1,10 @@
 import sys
 import getopt
 
+# Placeholder variables
+maxFom = 7.8
+cutFom = 8.3
+
 for eachArg in sys.argv[0:]:
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'hn:l:', ['help','nodes','layers'])
@@ -19,5 +23,8 @@ for eachArg in sys.argv[0:]:
         elif opt in ("-l", "--layers"):
             layers = arg
             #print(arg) 
+#c = "#Layers: ", layers
+print "\t# Layers: " + layers + "\n\t# Nodes: " + nodes + "\n\tMax Fom: " + str(maxFom) + " at cut " + str(cutFom)
 
-print "Layers: " + layers + "\n#Nodes: " + nodes 
+layers = float(layers)
+nodes = float(nodes)
