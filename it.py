@@ -23,7 +23,7 @@ for eachArg in sys.argv[0:]:
         elif opt in ("-l", "--layers"):
             layers = arg
             #print(arg) 
-#c = "#Layers: ", layers
+
 print "\t# Layers: " + layers + "\n\t# Nodes: " + nodes + "\n\tMax Fom: " + str(maxFom) + " at cut " + str(cutFom)
 
 layers = float(layers)
